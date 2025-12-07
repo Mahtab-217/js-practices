@@ -2,6 +2,7 @@ const nameList=["Yasin ","Laila","Yazdan","Naz","Ali","Frishta"];
 const sortedNames=nameList.sort((a,b)=>{
     return b.localeCompare(a);
 });
+// const reversed=nameList.reverse();
 const numbers=["z","l","e","j","r","a"];
 const sortedNumbers=numbers.sort((a,b)=>{
 return b.localeCompare(a);
@@ -30,13 +31,6 @@ const students=[
     score:99
 },
 ]
-   const result=students.findIndex((student)=>{
-    return student.name==="Muhammad Reza";
-   });
-   if(result!== -1){
-    console.log("Student exists");
 
-   }
-   else{
-    console.log("Students was not found");
-   }
+ 
+const UpdatedStudents=[...students,{id:4,name:"Ali",lastName:"Alizada",score:89}];
