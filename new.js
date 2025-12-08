@@ -33,4 +33,4 @@ const students=[
 ]
 
  
-const UpdatedStudents=[...students,{id:4,name:"Ali",lastName:"Alizada",score:89}];
+const UpdatedStudents=[...students,{id:4,name:"Ali",lastName:"Alizada",score:89},{id:5,name:"Jawid",lastName:"Nasiri",score:90}];
