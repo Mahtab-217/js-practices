@@ -18,3 +18,8 @@ const teachers=["Karim","Hassan","Juma","Mina"];
 const total=teachers.some((teacher)=>{
     return teacher.includes("Juma");
 })
+const name="Ali Agha";
+const named=name.length;
+console.log(name.toUpperCase());
+const lastName="REZAEI";
+console.log(lastName.toLowerCase());
