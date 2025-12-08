@@ -1,36 +1,20 @@
-const nameList=["Yasin ","Laila","Yazdan","Naz","Ali","Frishta"];
-const sortedNames=nameList.sort((a,b)=>{
-    return b.localeCompare(a);
+const number=[9,2,4,5,3,45,];
+const natija=number.reduce((result, number)=>{
+    return result*number;
 });
-// const reversed=nameList.reverse();
-const numbers=["z","l","e","j","r","a"];
-const sortedNumbers=numbers.sort((a,b)=>{
-return b.localeCompare(a);
+const students=["Ali","Hamid","Zahra", "Maryam","Ali","Zahra","joni","Ali"];
+const resulted=students.some((student)=>{
+    return student.includes("a");
 })
-  const founded= numbers.findIndex((letter)=>{
-  return letter==="j";
+const studentNum=students.reduce((acc,student)=>{
+    acc[student]=(acc[student] || 0)+1;
+return acc
+},{})
+const text=["Hi","there","Good","morning","!","Hope","You are","doing","great"];
+const sen=text.join(" ")
+const deleted=number.shift();
+number.unshift(444);
+const teachers=["Karim","Hassan","Juma","Mina"];
+const total=teachers.some((teacher)=>{
+    return teacher.includes("Juma");
 })
-
-const students=[
-{
-    id: 1,
-    name: "Muhammad",
-    lastName:"Alizada",
-    score:90
-},
-{
-    id: 2,
-    name: "Muhammad Reza",
-    lastName:"Rahmani",
-    score:99
-},
-{
-    id: 3,
-    name: "Muhammad Taha",
-    lastName:"Rahman",
-    score:99
-},
-]
-
- 
-const UpdatedStudents=[...students,{id:4,name:"Ali",lastName:"Alizada",score:89},{id:5,name:"Jawid",lastName:"Nasiri",score:90}];
